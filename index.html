@@ -1,41 +1,46 @@
 <!DOCTYPE html>
 <html lang="ru">
-  <head>
-    <meta charset="utf-8">
-    <title>HTML Academy: Нёрдс</title>
-  </head>
-  <body>
-    <header class="main-header">
-      <nav class="main-navigation">
+<head>
+  <meta charset="utf-8">
+  <title>HTML Academy: Нёрдс</title>
+</head>
+<body>
+  <header class="main-header">
+    <nav class="main-navigation">
       <a class="header-logo">
-        <img src="img/logo.svg" alt="Логотип веб-студии nerds">
+        <img src="img/logo.svg" width="100" height="100" alt="Логотип веб-студии nerds">
       </a>
-        <ul class="header-navigation">
-          <li><a href="info.html">студия</a></li>
-          <li><a href="clients.html">клиенты</a></li>
-          <li><a href="catalog.html">магазин</a></li>
-          <li><a href="contacts.html">контакты</a></li>
-        </ul>
-        <ul class="cart">
-          <li class="shopping-cart">корзина</li>
-        </ul>
-      </nav>
-      <div class="slider">
+      <ul class="header-navigation-items">
+        <li class="header-navigation-item"><a class="header-navigation-link" href="">студия</a></li>
+        <li class="header-navigation-item"><a classs="header-navigation-link"href="">клиенты</a></li>
+        <li class="header-navigation-item"><a classs="header-navigation-link"href="catalog.html">магазин</a></li>
+        <li class="header-navigation-item"><a classs="header-navigation-link"href="">контакты</a></li>
+      </ul>
+      <ul class="cart">
+        <li class="shopping-cart">корзина</li>
+      </ul>
+    </nav>
+  </header>
+
+  <section class>
+    <div class="slider">
+      <section class="slider1">
+        <p>Долго, дорого, скрупулезно.</p>
+        <p>Математически выверенный дизайн для вашего сайта или мобильного приложения</p>
         <a class="more" href="">узнать больше</a>
-        <section class="slider1">
-          <p>Долго, дорого, скрупулезно.</p>
-          <p>Математически выверенный дизайн для вашего сайта или мобильного приложения</p>
-        </section>
-        <section class="slider2">
-          <p>Любим математику как никто другой</p>
-          <p>Никакого креатива, только математические формулы для расчета идеальных пропорций</p>
-        </section>
-        <section class="slider3">
-          <p>Только ночь, только хардкор</p>
-          <p>Работать днем, как все? Мы против этого. Ближе к полуночи работа только начинается</p>
-        </section>
-      </div>
-    </header>
+      </section>
+      <section class="slider2">
+        <p>Любим математику как никто другой</p>
+        <p>Никакого креатива, только математические формулы для расчета идеальных пропорций</p>
+        <a class="more" href="">узнать больше</a>
+      </section>
+      <section class="slider3">
+        <p>Только ночь, только хардкор</p>
+        <p>Работать днем, как все? Мы против этого. Ближе к полуночи работа только начинается</p>
+        <a class="more" href="">узнать больше</a>
+      </section>
+    </div>
+
     <main>
       <h1 class="visually-hiden">Веб-студия Nerds</h1>
       <section class="store">
@@ -57,82 +62,79 @@
           </li>
         </ul>
       </section>
-      <hr>
+
       <section class="info">
         <h2 class="visually-hiden">Информация о нас</h2>
         <p>Мы – маленькая, но гордая дизайн-студия из Краснодара.</p>
         <p>Исповедуем принципы минимализма и чистоты. Ставим математический
           расчет превыше креатива. Работаем не покладая рук, как роботы.</p>
-        <ul class="orders-information">
-          <li>Веб-сайтов любой сложности</li>
-          <li>Мобильных приложений для iOS и Android</li>
-          <li>Слайдшоу и видео для корпоративных презентаций</li>
-        </ul>
-        <section class="advantages">
-          <p>с 2004 года любим точность во всём:</p>
-          <ul class="advantages-stats">
+          <ul class="orders-information">
+            <li>Веб-сайтов любой сложности</li>
+            <li>Мобильных приложений для iOS и Android</li>
+            <li>Слайдшоу и видео для корпоративных презентаций</li>
+          </ul>
+          <section class="advantages">
+            <p>с 2004 года любим точность во всём:</p>
+            <table class="advantages-stats">
+              <tr>
+                <td>146%</td>
+                <td>100%</td>
+                <td>50%</td>
+              </tr>
+              <tr>
+                <td>Уровень самоотдачи</td>
+                <td>Соблюдение сроков</td>
+                <td>Минимальная предоплата</td>
+              </tr>
+            </table>
+          </section>
+        </section>
+        <section class="partners">
+          <h2 class="visually-hiden">Наши партнеры</h2>
+          <ul class="partners-list">
             <li>
-              <p>146%</p>
-              <p>Уровень самоотдачи</p>
+              <a class="partner" href="https://htmlacademy.ru/intensive/htmlcss">
+                <img src="img/html-academy.svg" alt="сайт html-академии">
+              </a>
             </li>
             <li>
-              <p>100%</p>
-              <p>Соблюдение сроков</p>
+              <a class="partner" href="">
+                <img src="img/barbershop.svg" alt="барбаршоп Бородинский">
+              </a>
             </li>
             <li>
-              <p>50%</p>
-              <p>Минимальная предоплата</p>
+              <a class="partner" href="">
+                <img src="img/pink.svg" alt="Пинк">
+              </a>
+            </li>
+            <li>
+              <a class="partners" href="">
+                <img src="img/mishka.svg" alt="Мишка">
+              </a>
             </li>
           </ul>
         </section>
-      </section>
-      <hr>
-      <section class="partners">
-        <h2 class="visually-hiden">Наши партнеры</h2>
-        <ul class="partners-list">
-          <li>
-            <a class="partner" href="https://htmlacademy.ru/intensive/htmlcss">
-              <img src="img/html-academy.svg" alt="сайт html-академии">
-            </a>
-          </li>
-          <li>
-            <a class="partner" href="">
-              <img src="img/barbershop.svg" alt="барбаршоп Бородинский">
-            </a>
-          </li>
-          <li>
-            <a class="partner" href="">
-              <img src="img/pink.svg" alt="Пинк">
-            </a>
-          </li>
-          <li>
-            <a class="partners" href="">
-              <img src="img/mishka.svg" alt="Мишка">
-            </a>
-          </li>
-        </ul>
-      </section>
-      <hr>
-      <section class="map">
-        <img class="map" src="img/map.svg" alt="карта">
-        <section clss="contacts">
-          <p>NЁRDS DESIGN STUDIO</p>
-          <p>191186, Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
-          <p>тел. +7 (812) 275-75-75</p>
-          <a class="letter" href="">напишите нам</a>
+
+        <section class="map">
+          <img class="map" src="img/map.svg" alt="карта">
+          <section clss="contacts">
+            <p>NЁRDS DESIGN STUDIO</p>
+            <p>191186, Санкт-Петербург,<br>ул. Б. Конюшенная, д. 19/8</p>
+            <p>тел. +7 (812) 275-75-75</p>
+            <a class="letter" href="">напишите нам</a>
+          </section>
         </section>
-      </section>
-      <footer class="main-footer">
-        <div class="social">
-          <ul>
-            <li><a class="social-button" href="">Вконтакте</a></li>
-            <li><a class="social-button" href="">Фейсбук</a></li>
-            <li><a class="social-button" href="">Инстаграм</a></li>
-          </ul>
-        </div>
-        <p>Давайте дружить, это выгодно!</p>
-        <p>Скидка 10% для друзей из социальных сетей</p>
-      </footer>
-    </main>
-  </body>
-</html>
+        <footer class="main-footer">
+          <div class="social">
+            <ul>
+              <li><a class="social-button" href="">Вконтакте</a></li>
+              <li><a class="social-button" href="">Фейсбук</a></li>
+              <li><a class="social-button" href="">Инстаграм</a></li>
+            </ul>
+          </div>
+          <p>Давайте дружить, это выгодно!</p>
+          <p>Скидка 10% для друзей из социальных сетей</p>
+        </footer>
+      </main>
+    </body>
+    </html>
