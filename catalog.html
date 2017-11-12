@@ -8,7 +8,7 @@
   <header class="main-header">
     <nav class="main-navigation">
       <a class="header-logo">
-        <img src="img/logo.svg" width="100" height="100" alt="Логотип веб-студии nerds">
+        <a href="index.html"><img src="img/nerds-logo.svg" width="160" height="65" alt="Логотип веб-студии nerds"></a>
       </a>
       <ul class="header-navigation-items">
         <li class="header-navigation-item"><a class="header-navigation-link" href="">студия</a></li>
@@ -25,10 +25,55 @@
       <h1>Магазин готовых шаблонов</h1>
     </section>
 
-    <!-- Здесь будут формы для сортировки
     <section class="options">
+      <form class="sorting-form" action="" method="post">
+        <fieldset class="price">
+          <label for="price-bar">Стоимость:</label><br>
+          <input type="range" id="price-bar" min="0" max="15000" step="500">
+            <div class="min-max">
+              <label>от
+                <input type="text" value="0">
+              </label>
+              <label>до
+                <input type="text" value="15000">
+              </label>
+            </div>
+        </fieldset>
 
-    </section> -->
+        <fieldset class="grid-box">
+          <legend>сетка:</legend>
+          <input type="radio" name="radio" value="adaptive" id="adaptive" checked>
+					<label for="adaptive">Адаптивная</label>
+          <br>
+          <input type="radio" name="radio" value="fixed" id="fixed">
+          <label for="fixed">Фиксированная</label>
+          <br>
+          <input type="radio" name="radio" value="stretched" id="stretched">
+          <label for="stretched">Резиновая</label>
+        </fieldset>
+
+        <fieldset class="features-box">
+          <legend>Особенности:</legend>
+          <input type="checkbox" name="checkbox-slider" id="checkbox-slider" value="checkbox-slider" checked>
+          <label for="checkbox-slider">Слайдер</label>
+          <br>
+          <input type="checkbox" name="checkbox-features" id="checkbox-features" value="checkbox-features">
+          <label for="checkbox-features">Блок преимуществ</label>
+          <br>
+          <input type="checkbox" name="checkbox-news" id="checkbox-news" value="checkbox-news" checked>
+          <label for="checkbox-news">Новости</label>
+          <br>
+          <input type="checkbox" name="checkbox-gallery" id="checkbox-gallery" value="checkbox-gallery">
+          <label for="checkbox-gallery">Галерея</label>
+          <br>
+          <input type="checkbox" name="checkbox-cort" id="checkbox-cort" value="checkbox-cort">
+          <label for="checkbox-cort">Корзина</label>
+        </fieldset>
+
+        <input type="submit" class="form-btn" value="показать">
+
+      </form>
+    </section>
 
     <section class="sorting">
       <h2 class="visually-hiden">Сортировать</h2>
@@ -93,10 +138,18 @@
     <section class="catalog-navigation">
       <nav class="navigation-list">
         <ul class="navigation-items">
-          <li>1</li>
-          <li>2</li>
-          <li>3</li>
-          <li>Следующая</li>
+          <li>
+          <a href="">1</a>
+          </li>
+          <li>
+          <a href="">2</a>
+          </li>
+          <li>
+          <a href="">3</a>
+          </li>
+          <li>
+          <a class="next-btn" href="">Следующая</a>
+          </li>
         </ul>
       </nav>
     </section>
