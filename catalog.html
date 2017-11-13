@@ -7,8 +7,8 @@
 <body>
   <header class="main-header">
     <nav class="main-navigation">
-      <a class="header-logo">
-        <a href="index.html"><img src="img/nerds-logo.svg" width="160" height="65" alt="Логотип веб-студии nerds"></a>
+      <a class="header-logo" href="index.html">
+        <img src="img/nerds-logo.svg" width="160" height="65" alt="Логотип веб-студии nerds">
       </a>
       <ul class="header-navigation-items">
         <li class="header-navigation-item"><a class="header-navigation-link" href="">студия</a></li>
@@ -27,9 +27,10 @@
 
     <section class="options">
       <form class="sorting-form" action="" method="post">
+
         <fieldset class="price">
-          <label for="price-bar">Стоимость:</label><br>
-          <input type="range" id="price-bar" min="0" max="15000" step="500">
+          <legend>стоимость:</legend><br>
+          <input type="range" min="0" max="15000" step="500">
             <div class="min-max">
               <label>от
                 <input type="text" value="0">
@@ -42,18 +43,18 @@
 
         <fieldset class="grid-box">
           <legend>сетка:</legend>
-          <input type="radio" name="radio" value="adaptive" id="adaptive" checked>
-					<label for="adaptive">Адаптивная</label>
+          <input type="radio" name="grid-box-radio" value="adaptive" id="grid-box-adaptive" checked>
+					<label for="grid-box-adaptive">Адаптивная</label>
           <br>
-          <input type="radio" name="radio" value="fixed" id="fixed">
-          <label for="fixed">Фиксированная</label>
+          <input type="radio" name="grid-box-radio" value="fixed" id="grid-box-fixed">
+          <label for="grid-box-fixed">Фиксированная</label>
           <br>
-          <input type="radio" name="radio" value="stretched" id="stretched">
-          <label for="stretched">Резиновая</label>
+          <input type="radio" name="grid-box-radio" value="stretched" id="grid-box-stretched">
+          <label for="grid-box-stretched">Резиновая</label>
         </fieldset>
 
         <fieldset class="features-box">
-          <legend>Особенности:</legend>
+          <legend>особенности:</legend>
           <input type="checkbox" name="checkbox-slider" id="checkbox-slider" value="checkbox-slider" checked>
           <label for="checkbox-slider">Слайдер</label>
           <br>
