@@ -1,0 +1,345 @@
+/*  ОБЩИЕ СТИЛИ  */
+
+body {
+  margin: 0;
+  padding: 0;
+
+  font-family: 'Roboto', Arial, sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 700;
+  color: rgb(40,49,54);
+  background-color: rgb(255,255,255);
+}
+
+a {
+  text-decoration: none;
+}
+
+.visually-hidden {
+  position: absolute !important;
+	clip: rect(1px 1px 1px 1px); /* IE6, IE7 */
+	clip: rect(1px, 1px, 1px, 1px);
+	padding:0 !important;
+	border:0 !important;
+	height: 1px !important;
+	width: 1px !important;
+  overflow: hidden;
+}
+
+
+/*  ХЕДЕР  */
+
+.header-logo img:hover {
+  opacity: 0.8;
+}
+
+.header-logo img:active {
+  opacity: 0.3;
+}
+
+.main-navigation {
+  font-size: 16px;
+  line-height: 30px;
+  color: rgb(0,0,0);
+  background-color: rgb(238,238,238);
+}
+
+.header-navigation-items,
+.store-list,
+.orders-information,
+.partners-list {
+  list-style: none;
+}
+
+.header-navigation-link,
+.cart,
+.more,
+.letter,
+.social-button {
+  color: rgb(0,0,0);
+}
+
+.header-navigation-link,
+.cart {
+  font-weight: 500;
+  text-transform: uppercase;
+  font-size: 16px;
+  line-height: 30px;
+}
+
+.header-navigation-items a:hover,
+.cart:hover {
+  color: rgb(251,86,90);
+}
+
+.header-navigation-items a:active,
+.cart:active {
+  color: rgba(0,0,0, 0.3);
+}
+
+.header-navigation-link:visited {
+  border-bottom: 2px solid rgba(251,86,90,1);
+  margin-bottom: 13px;
+}
+
+.main-footer {
+  background-color: rgb(238,238,238);
+}
+
+.main-footer p {
+  font-size: 16px;
+  line-height: 22px;
+}
+.main-footer .be-friend {
+  font-size: 36px;
+  line-height: 36px;
+}
+
+
+/*  СЛАЙДЕР  */
+
+.slider-header {
+  font-weight: 500;
+  font-size: 55px;
+  line-height: 55px;
+  color: rgb(0,0,0);
+}
+
+.more-btn {
+  text-transform: uppercase;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 18px;
+  color: rgb(255,255,255);
+  background-color: rgb(251,86,90);
+}
+
+.more-btn:hover {
+  background-color: rgba(231,66,70,1);
+  color: rgba(255,255,255,1);
+  text-decoration: none;
+}
+
+.more-btn:active {
+  background-color: rgba(215,55,59,1);
+  color: rgba(255,255,255,0.3);
+  text-decoration: none;
+}
+
+/*  ВИТРИНА  */
+
+.store-list h3 {
+  text-transform: uppercase;
+  font-size: 24px;
+  line-height: 30px;
+  font-weight: bold;
+  color: rgb(0,0,0);
+}
+
+.order-btn {
+  font-weight: 500;
+  text-transform: uppercase;
+  font-size: 16px;
+  line-height: 18px;
+}
+
+.order-btn-red {
+  background-color: rgba(251,86,90,1);
+  color: rgba(255,255,255,1);
+  text-decoration: none;
+}
+
+.order-btn-red:hover {
+  background-color: rgba(231,66,70,1);
+  color: rgba(255,255,255,1);
+}
+
+.order-btn-red:active {
+  background-color: rgba(215,55,59,1);
+  color: rgba(255,255,255,0.3);
+}
+
+.order-btn-green {
+  background-color: rgba(0,202,116,1);
+  color: rgba(255,255,255,1);
+  text-decoration: none;
+}
+
+.order-btn-green:hover {
+  background-color: rgba(0,188,108,1);
+  color: rgba(255,255,255,1);
+}
+
+.order-btn-green:active {
+  background-color: rgba(0,170,98,1);
+  color: rgba(255,255,255,0.3);
+}
+
+.order-btn-yellow {
+  background-color: rgba(239,200,74,1);
+  color: rgba(255,255,255,1);
+  text-decoration: none;
+}
+
+.order-btn-yellow:hover {
+  background-color: rgba(234,181,52,1);
+  color: rgba(255,255,255,1);
+}
+
+.order-btn-yellow:active {
+  background-color: rgba(229,167,34,1);
+  color: rgba(255,255,255,0.3);
+}
+
+/*  О НАС  */
+
+.about-us-title {
+  font-weight: 500;
+  font-size: 45px;
+  line-height: 45px;
+  color: rgb(0,0,0);
+}
+
+
+.about-us-orders,
+.table-history  {
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 24px;
+  color: rgb(0,0,0);
+}
+
+.table-digits {
+  font-size: 45px;
+  color: rgb(0,0,0);
+}
+
+.table-digits td {
+  font-weight: bold;
+}
+
+.table-indicators {
+  font-size: 16px;
+  line-height: 18px;
+}
+
+.advantages {
+  background-image: url("../img/nerds-illustration-min.jpg");
+  background-repeat: no-repeat;
+  padding-top: 230px;
+}
+
+
+/*  ПАРТНЕРЫ  */
+
+.partner-img {
+  opacity: 0.2;
+}
+
+.partner-img:hover {
+  opacity: 1;
+}
+
+.partner-img:active {
+  opacity: 0.1;
+}
+
+
+/*  КАРТА */
+
+.contacts-title {
+  text-transform: uppercase;
+  font-weight: bold;
+  color: rgb(0,0,0);
+}
+
+.contacts-info {
+  color: rgb(102,102,102);
+}
+
+.letter {
+  text-transform: uppercase;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 18px;
+  color: rgb(255,255,255);
+  background-color: rgb(251,86,90);
+}
+
+.letter:hover {
+  background-color: rgba(231,66,70,1);
+  color: rgba(255,255,255,1);
+}
+
+.letter:active {
+  background-color: rgba(215,55,59,1);
+  color: rgba(255,255,255,0.3);
+}
+
+/*  ФУТЕР  */
+
+.main-footer .footer-be-friend {
+  font-size: 36px;
+  line-height: 36px;
+  font-weight: bold;
+  color: rgb(0,0,0);
+}
+
+.social-list {
+  list-style: none;
+}
+
+
+/*  НАПИШИТЕ НАМ  */
+
+.write-us-legend {
+  font-size: 36px;
+  line-height: 36px;
+  font-weight: 500;
+  color: rgb(0,0,0);
+}
+
+.write-us-label {
+  font-size: 16px;
+  line-height: 18px;
+  font-weight: bold;
+  color: rgb(0,0,0);
+}
+
+.write-us-label placeholder {
+  font-family: "Roboto", Arial;
+}
+
+.write-us-btn {
+  border: 0;
+  text-transform: uppercase;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 18px;
+  color: rgb(255,255,255);
+  background-color: rgb(251,86,90);
+}
+
+.write-us-btn:hover {
+  background-color: rgba(231,66,70,1);
+  color: rgba(255,255,255,1);
+}
+
+.write-us-btn:active {
+  background-color: rgba(215,55,59,1);
+  color: rgba(255,255,255,0.3);
+}
+
+.write-us-input {
+  border: 2px solid rgba(215,220,222,1);
+}
+
+.write-us-input:hover {
+  border: 2px solid rgba(180,185,187,1);
+}
+
+.write-us-input:focus {
+  border: 2px solid rgba(0,0,0,1);
+}

@@ -1,0 +1,369 @@
+/*  ОБЩИЕ СТИЛИ  */
+
+body {
+  margin: 0;
+  padding: 0;
+
+  font-family: 'Roboto', Arial, sans-serif;
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: 700;
+  color: rgb(40,49,54);
+  background-color: rgb(255,255,255);
+}
+
+a {
+  text-decoration: none;
+}
+
+.visually-hidden {
+  position: absolute !important;
+	clip: rect(1px 1px 1px 1px); /* IE6, IE7 */
+	clip: rect(1px, 1px, 1px, 1px);
+	padding:0 !important;
+	border:0 !important;
+	height: 1px !important;
+	width: 1px !important;
+  overflow: hidden;
+}
+
+
+/*  ХЕДЕР  */
+
+.header-logo img:hover {
+  opacity: 0.8;
+}
+
+.header-logo img:active {
+  opacity: 0.3;
+}
+
+.main-navigation {
+  font-size: 16px;
+  line-height: 30px;
+  color: rgb(0,0,0);
+  background-color: rgb(238,238,238);
+}
+
+.header-navigation-items,
+.store-list,
+.orders-information,
+.partners-list,
+.catalog-list {
+  list-style: none;
+}
+
+
+.header-navigation-link,
+.cart,
+.more,
+.letter,
+.social-button {
+  color: rgb(0,0,0);
+}
+
+.header-navigation-link,
+.cart {
+  font-weight: 500;
+  text-transform: uppercase;
+  font-size: 16px;
+  line-height: 30px;
+}
+
+.header-navigation-items a:hover,
+.cart:hover {
+  color: rgb(251,86,90);
+}
+
+.header-navigation-items a:active,
+.cart:active {
+  color: rgba(0,0,0, 0.3);
+}
+
+.main-footer {
+  background-color: rgb(238,238,238);
+}
+
+.main-footer p {
+  font-size: 16px;
+  line-height: 22px;
+}
+.main-footer .be-friend {
+  font-size: 36px;
+  line-height: 36px;
+}
+
+.header h1 {
+  font-size: 55px;
+  line-height: 55px;
+  color: rgb(0,0,0);
+  text-align: center;
+  background-color: rgb(238,238,238);
+}
+
+
+/*  ФОРМА */
+
+
+.price legend,
+.grid-box-field legend,
+.features-box-field legend {
+  font-weight: bold;
+  text-transform: uppercase;
+  font-size: 18px;
+  line-height: 18px;
+  color: rgb(0,0,0);
+}
+
+.grid-box-label {
+  font-size: 16px;
+  line-height: 20px;
+  color: rgba(40,49,54,1);
+}
+
+.grid-box-label:hover {
+  color: rgb(0,0,0);
+}
+
+.grid-box-label:disabled {
+  opacity: 0.3;
+}
+
+.checkbox-label {
+  font-size: 16px;
+  line-height: 20px;
+  color: rgba(40,49,54,1);
+}
+
+.checkbox-label:hover {
+  color: rgb(0,0,0);
+}
+
+.checkbox-label:disabled {
+  opacity: 0.3;
+}
+
+.form-btn {
+  font-family: 'Roboto', Arial, sans-serif;
+  font-weight: 500;
+  text-transform: uppercase;
+  font-size: 16px;
+  line-height: 18px;
+  color: rgba(0,0,0,1);
+  background-color: rgba(238,238,238,1);
+}
+
+.form-btn:hover {
+  background-color: rgba(223,223,223,1);
+}
+
+.form-btn:active {
+  color: rgba(0,0,0,0.3);
+  background-color: rgba(213,213,213,1);
+}
+
+
+/*  СОРТИРОВКА */
+
+.sorting-label {
+  font-weight: bold;
+  text-transform: uppercase;
+  font-size: 18px;
+  line-height: 18px;
+  color: rgb(0,0,0);
+}
+
+.sorting-list {
+  list-style: none;
+}
+
+.sort-btn {
+  background: none;
+  outline: 0;
+  border: 0;
+  text-transform: uppercase;
+  font-size: 14px;
+  line-height: 18px;
+  color: rgba(0,0,0,0.3);
+}
+
+.sort-btn:hover {
+  color: rgba(0,0,0,0.6);
+}
+
+.sort-btn:active {
+  color: rgba(0,0,0,1);
+}
+
+
+/*  КАТАЛОГ */
+
+.catalog-item-label {
+  font-size: 18px;
+  line-height: 30px;
+  color: rgba(0,0,0,1);
+}
+
+.catalog-price-btn {
+  text-transform: uppercase;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 18px;
+  border: 0;
+  color: rgba(255,255,255,1);
+  background-color: rgba(251,86,90,1);
+}
+
+.catalog-price-btn:hover {
+  background-color: rgba(231,66,70,1);
+}
+
+.catalog-price-btn:active {
+  background-color: rgba(215,55,59,1);
+}
+
+.catalog-item {
+  background-image: url("../img/browser.svg");
+  background-repeat: no-repeat;
+  padding-top: 40px;
+}
+
+/*  СТРАНИЦЫ */
+
+.navigation-page {
+  font-weight: 500;
+  text-transform: uppercase;
+  font-size: 16px;
+  line-height: 18px;
+  color: rgba(0,0,0,1);
+  background-color: rgba(238,238,238,1);
+}
+
+.navigation-page:hover {
+  background-color: rgba(223,223,223,1);
+}
+
+.navigation-page:active {
+  color: rgba(0,0,0,0.3);
+  background-color: rgba(213,213,213,1);
+}
+
+.next-btn {
+  font-family: 'Roboto', Arial, sans-serif;
+  font-weight: 500;
+  text-transform: uppercase;
+  font-size: 16px;
+  line-height: 18px;
+  color: rgba(0,0,0,1);
+  background-color: rgba(238,238,238,1);
+}
+
+.next-btn:hover {
+  background-color: rgba(223,223,223,1);
+}
+
+.next-btn:active {
+  color: rgba(0,0,0,0.3);
+  background-color: rgba(213,213,213,1);
+}
+
+
+/*  КАРТА */
+
+.contacts-title {
+  text-transform: uppercase;
+  font-weight: bold;
+  color: rgb(0,0,0);
+}
+
+.contacts-info {
+  color: rgb(102,102,102);
+}
+
+.letter {
+  text-transform: uppercase;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 18px;
+  color: rgb(255,255,255);
+  background-color: rgb(251,86,90);
+}
+
+.letter:hover {
+  background-color: rgba(231,66,70,1);
+  color: rgba(255,255,255,1);
+  text-decoration: none;
+}
+
+.letter:active {
+  background-color: rgba(215,55,59,1);
+  color: rgba(255,255,255,0.3);
+  text-decoration: none;
+}
+
+
+/*  ФУТЕР  */
+
+.main-footer .footer-be-friend {
+  font-size: 36px;
+  line-height: 36px;
+  font-weight: bold;
+  color: rgb(0,0,0);
+}
+
+.social-list {
+  list-style: none;
+}
+
+
+/*  НАПИШИТЕ НАМ  */
+
+.write-us-legend {
+  font-size: 36px;
+  line-height: 36px;
+  font-weight: 500;
+  color: rgb(0,0,0);
+}
+
+.write-us-label {
+  font-size: 16px;
+  line-height: 18px;
+  font-weight: bold;
+  color: rgb(0,0,0);
+}
+
+.write-us-label placeholder {
+  font-family: "Roboto", Arial;
+}
+
+.write-us-btn {
+  border: 0;
+  text-transform: uppercase;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 18px;
+  color: rgb(255,255,255);
+  background-color: rgb(251,86,90);
+}
+
+.write-us-btn:hover {
+  background-color: rgba(231,66,70,1);
+  color: rgba(255,255,255,1);
+}
+
+.write-us-btn:active {
+  background-color: rgba(215,55,59,1);
+  color: rgba(255,255,255,0.3);
+}
+
+.write-us-input {
+  border: 2px solid rgba(215,220,222,1);
+}
+
+.write-us-input:hover {
+  border: 2px solid rgba(180,185,187,1);
+}
+
+.write-us-input:focus {
+  border: 2px solid rgba(0,0,0,1);
+}
