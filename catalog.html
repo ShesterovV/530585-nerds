@@ -18,7 +18,7 @@
       <ul class="header-navigation-items">
         <li class="header-navigation-item"><a class="header-navigation-link" href="">студия</a></li>
         <li class="header-navigation-item"><a class="header-navigation-link" href="">клиенты</a></li>
-        <li class="header-navigation-item"><a class="header-navigation-link navigation-link-active" href="catalog.html">магазин</a></li>
+        <li class="header-navigation-item"><a class="header-navigation-link navigation-link-active" href="">магазин</a></li>
         <li class="header-navigation-item"><a class="header-navigation-link" href="">контакты</a></li>
       </ul>
       <a class="cart" href="">корзина</a>
@@ -33,7 +33,7 @@
         <section class="options">
           <form class="sorting-form" action="" method="post">
             <fieldset class="price">
-              <legend>стоимость:</legend><br>
+              <legend class="price-legend">стоимость:</legend><br>
               <input class="price-range" type="range" min="0" max="15000" step="500">
               <div class="min-max">
                 <label>От
@@ -46,33 +46,37 @@
             </fieldset>
 
             <fieldset class="grid-box-field">
-              <legend class="options-legend">сетка:</legend>
+              <legend class="options-legend-net">сетка:</legend>
               <input class="grid-box-radio" type="radio" name="grid-box-radio" value="adaptive" id="grid-box-adaptive" checked>
               <label class="grid-box-label" for="grid-box-adaptive">Адаптивная</label>
-              <br>
               <input class="grid-box-radio" type="radio" name="grid-box-radio" value="fixed" id="grid-box-fixed">
               <label class="grid-box-label" for="grid-box-fixed">Фиксированная</label>
-              <br>
               <input class="grid-box-radio" type="radio" name="grid-box-radio" value="stretched" id="grid-box-stretched">
               <label class="grid-box-label" for="grid-box-stretched">Резиновая</label>
             </fieldset>
 
             <fieldset class="features-box-field">
-              <legend class="options-legend">особенности:</legend>
-              <input class="features-box-checkbox" type="checkbox" name="checkbox-slider" id="checkbox-slider" value="checkbox-slider" checked>
-              <label class="checkbox-label" for="checkbox-slider">Слайдер</label>
-              <br>
-              <input class="features-box-checkbox" type="checkbox" name="checkbox-features" id="checkbox-features" value="checkbox-features">
-              <label class="checkbox-label" for="checkbox-features">Блок преимуществ</label>
-              <br>
-              <input class="features-box-checkbox" type="checkbox" name="checkbox-news" id="checkbox-news" value="checkbox-news" checked>
-              <label class="checkbox-label" for="checkbox-news">Новости</label>
-              <br>
-              <input class="features-box-checkbox" type="checkbox" name="checkbox-gallery" id="checkbox-gallery" value="checkbox-gallery">
-              <label class="checkbox-label" for="checkbox-gallery">Галерея</label>
-              <br>
-              <input class="features-box-checkbox" type="checkbox" name="checkbox-cort" id="checkbox-cort" value="checkbox-cort">
-              <label class="checkbox-label" for="checkbox-cort">Корзина</label>
+              <legend class="options-legend-features">особенности:</legend>
+              <div class="checkbox-group">
+                <input class="features-box-checkbox" type="checkbox" name="checkbox-slider" id="checkbox-slider" value="checkbox-slider" checked>
+                <label class="checkbox-label" for="checkbox-slider">Слайдер</label>
+              </div>
+              <div class="checkbox-group">
+                <input class="features-box-checkbox" type="checkbox" name="checkbox-features" id="checkbox-features" value="checkbox-features">
+                <label class="checkbox-label" for="checkbox-features">Блок преимуществ</label>
+              </div>
+              <div class="checkbox-group">
+                <input class="features-box-checkbox" type="checkbox" name="checkbox-news" id="checkbox-news" value="checkbox-news" checked>
+                <label class="checkbox-label" for="checkbox-news">Новости</label>
+              </div>
+              <div class="checkbox-group">
+                <input class="features-box-checkbox" type="checkbox" name="checkbox-gallery" id="checkbox-gallery" value="checkbox-gallery">
+                <label class="checkbox-label" for="checkbox-gallery">Галерея</label>
+              </div>
+              <div class="checkbox-group">
+                <input class="features-box-checkbox" type="checkbox" name="checkbox-cort" id="checkbox-cort" value="checkbox-cort">
+                <label class="checkbox-label" for="checkbox-cort">Корзина</label>
+              </div>
             </fieldset>
             <input type="submit" class="form-btn" value="показать">
           </form>
@@ -105,7 +109,7 @@
                 <div class="catalog-item-details">
                   <p class="catalog-item-label">Sedona</p>
                   <p class="catalog-item-text">Информационный сайт<br>для туристов</p>
-                  <button class="catalog-price-btn">9900 руб.</button>
+                  <button class="catalog-price-btn">9 900 руб.</button>
                 </div>
               </li>
               <li class="catalog-item">
@@ -113,7 +117,7 @@
                 <div class="catalog-item-details">
                   <p class="catalog-item-label">Pink app</p>
                   <p class="catalog-item-text">Продуктовый лендинг<br>приложения для iOS и Android</p>
-                  <button class="catalog-price-btn">9900 руб.</button>
+                  <button class="catalog-price-btn">9 900 руб.</button>
                 </div>
               </li>
               <li class="catalog-item">
@@ -121,7 +125,7 @@
                 <div class="catalog-item-details">
                   <p class="catalog-item-label">Barbershop</p>
                   <p class="catalog-item-text">Сайт салона красоты.<br>Для мужчин, да.</p>
-                  <button class="catalog-price-btn">9900 руб.</button>
+                  <button class="catalog-price-btn">9 900 руб.</button>
                 </div>
               </li>
               <li class="catalog-item">
@@ -129,7 +133,7 @@
                 <div class="catalog-item-details">
                   <p class="catalog-item-label">Mishka</p>
                   <p class="catalog-item-text">Интернет-магазин<br>вязаных игрушек</p>
-                  <button class="catalog-price-btn">9900 руб.</button>
+                  <button class="catalog-price-btn">9 900 руб.</button>
                 </div>
               </li>
               <li class="catalog-item">
@@ -137,7 +141,7 @@
                 <div class="catalog-item-details">
                   <p class="catalog-item-label">A plus</p>
                   <p class="catalog-item-text">Лендинг курсов повышения<br>квалификации</p>
-                  <button class="catalog-price-btn">9900 руб.</button>
+                  <button class="catalog-price-btn">9 900 руб.</button>
                 </div>
               </li>
               <li class="catalog-item">
@@ -145,7 +149,7 @@
                 <div class="catalog-item-details">
                   <p class="catalog-item-label">Кваст</p>
                   <p class="catalog-item-text">Промо-сайт производителя<br>крафтового кваса</p>
-                  <button class="catalog-price-btn">9900 руб.</button>
+                  <button class="catalog-price-btn">9 900 руб.</button>
                 </div>
               </li>
             </ul>
@@ -186,26 +190,46 @@
     <footer class="main-footer container">
       <div class="social">
         <ul class="social-list">
-          <li><a class="social-button social-button-vk" href="">Вконтакте</a></li>
-          <li><a class="social-button social-button-fb" href="">Фейсбук</a></li>
-          <li><a class="social-button social-button-inst" href="">Инстаграм</a></li>
+          <li>
+            <a class="social-button social-button-vk" href="">
+              <img class="social-button-icon" src="../img/vk-icon.svg" alt="Вконтакте">
+              Вконтакте
+            </a>
+          </li>
+          <li>
+            <a class="social-button social-button-fb" href="">
+              <img class="social-button-icon" src="../img/fb-icon.svg" alt="Facebook">
+              Фейсбук
+            </a>
+          </li>
+          <li>
+            <a class="social-button social-button-inst" href="">
+              <img class="social-button-icon" src="../img/insta-icon.svg" alt="Instagram">
+              Инстаграм
+            </a>
+          </li>
         </ul>
       </div>
-      <p class="footer-be-friend">Давайте дружить, это выгодно!</p>
-      <p>Скидка 10% для друзей из социальных сетей</p>
+      <div class="footer-info">
+        <p class="footer-title">Давайте дружить, это выгодно!</p>
+        <p class="footer-text">Скидка 10% для друзей из социальных сетей</p>
+      </div>
     </footer>
     <section class="write-us-section">
       <form class="write-us-form">
         <legend class="write-us-legend">Напишите нам</legend>
-        <label class="write-us-label">Ваше имя:
-          <input class="write-us-input" type="name" placeholder="Представьтесь, пожалуйста">
-        </label>
-        <label class="write-us-label">Ваш e-mail:
-          <input class="write-us-input" type="email" placeholder="Для отправки ответа">
-        </label>
-        <label class="write-us-label write-us-message">Текст письма:
-          <textarea class="write-us-textarea" placeholder="В свободной форме"></textarea>
-        </label>
+        <div class="form-block">
+          <div class="form-item">
+            <label for="name" class="write-us-label">Ваше имя:</label>
+            <input class="write-us-input" type="name" id="name" placeholder="Представьтесь, пожалуйста">
+          </div>
+          <div class="form-item">
+            <label for="email" class="write-us-label">Ваш e-mail:</label>
+            <input class="write-us-input" type="email" id="email" placeholder="Для отправки ответа">
+          </div>
+        </div>
+        <label for="write-text" class="write-us-label write-us-message">Текст письма:</label>
+        <textarea class="write-us-textarea" id="write-text" placeholder="В свободной форме"></textarea>
         <input class="write-us-btn" type="submit" value="отправить">
         <button class="write-us-exit">Выход</button>
       </form>
