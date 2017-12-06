@@ -1,11 +1,8 @@
   var link = document.querySelector(".letter");
-
   var popup = document.querySelector(".write-us-form");
   var close = popup.querySelector(".write-us-exit");
-
   var login = popup.querySelector("[name=login]");
   var email = popup.querySelector("[name=email]");
-
   var storage = localStorage.getItem("login");
 
   link.addEventListener("click", function (evt) {
