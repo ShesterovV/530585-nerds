@@ -654,6 +654,8 @@ fieldset {
   margin-top: 0;
   margin-bottom: 58px;
   padding-top: 68px;
+  padding-left: 20px;
+  padding-right: 20px;
   padding-bottom: 108px;
 }
 
@@ -790,6 +792,10 @@ fieldset {
   border-radius: 3px;
 }
 
+.grid-box-group {
+  margin-bottom: 16px;
+}
+
 .grid-box-radio {
   display: none;
 }
@@ -801,7 +807,6 @@ fieldset {
 .grid-box-label {
     position: relative;
     padding-left: 37px;
-    margin-bottom: 20px;
     cursor: pointer;
     font-size: 16px;
     line-height: 20px;
@@ -827,11 +832,11 @@ fieldset {
 }
 
 .options-legend-net {
-  margin-bottom: 21px;
+  margin-bottom: 19px;
 }
 
 .options-legend-features {
-  margin-bottom: 19px;
+  margin-bottom: 21px;
 }
 
 .grid-box-label:hover {
@@ -899,6 +904,7 @@ fieldset {
   background-color: rgba(238,238,238,1);
   padding: 15px 90px;
   outline: none;
+  cursor: pointer;
 }
 
 .form-btn:hover {
@@ -958,6 +964,7 @@ fieldset {
   line-height: 18px;
   color: rgba(0,0,0,0.3);
   margin-right: 20px;
+  cursor: pointer;
 }
 
 .sort-btn:hover {
@@ -984,6 +991,7 @@ fieldset {
   font-size: 0;
   padding: 0;
   outline: none;
+  cursor: pointer;
 }
 
 .sorting-btn-figure:hover {
@@ -1081,6 +1089,7 @@ fieldset {
   outline: none;
   color: rgba(255,255,255,1);
   background-color: rgba(251,86,90,1);
+  cursor: pointer;
 }
 
 .catalog-price-btn:hover {
@@ -1230,6 +1239,7 @@ fieldset {
   border-top: 3px solid transparent;
   border-radius: 3px;
   outline: none;
+  cursor: pointer;
 }
 
 .letter:hover {
@@ -1401,6 +1411,7 @@ fieldset {
   color: rgb(255,255,255);
   background-color: rgb(251,86,90);
   outline: none;
+  cursor: pointer;
 }
 
 .write-us-btn:hover {
