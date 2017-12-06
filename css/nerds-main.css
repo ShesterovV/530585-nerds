@@ -169,12 +169,12 @@ fieldset {
   background-color: rgba(238,238,238,1);
 }
 
-.slider > .container {
+.slider-container {
   position: relative;
   overflow-x: hidden;
   height: 421px;
-  padding: 0;
-  width: 1160px;
+  width: 1200px;
+  margin: 0 auto;
 }
 
 .slider input {
@@ -197,7 +197,8 @@ fieldset {
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
-  width: 100%;
+  width: 1160px;
+  padding: 0 20px;
 }
 
 .slider-controls {
@@ -357,7 +358,7 @@ fieldset {
 
 .store-item-text {
   margin: 0;
-  margin-bottom: 29px;
+  margin-bottom: 30px;
   width: 270px;
 }
 
@@ -376,7 +377,7 @@ fieldset {
   text-transform: uppercase;
   font-size: 16px;
   line-height: 18px;
-  padding: 16px 40px;
+  padding: 15px 40px;
   border-radius: 3px;
   border-top: 3px solid transparent;
 }
@@ -458,8 +459,9 @@ fieldset {
 
 }
 
-.info::after {
+.info:after {
   content: "";
+  display: block;
   margin-top: 71px;
   width: 100%;
   border-bottom: 2px solid rgba(238,238,238,1);
@@ -530,7 +532,7 @@ fieldset {
 
 .table-digits-item {
   padding-left: 0px;
-  padding-right: 16px;
+  padding-right: 17px;
   line-height: 1.5;
   align-self: flex-start;
 }
@@ -572,7 +574,7 @@ fieldset {
   flex-wrap: wrap;
   justify-content: space-around;
   align-items: flex-start;
-  margin-bottom: 80px;
+  margin-bottom: 81px;
   padding: 0;
 }
 
@@ -580,6 +582,7 @@ fieldset {
 
 .partners-list::after {
   content: "";
+  display: block;
   margin-top: 42px;
   width: 97%;
   border-bottom: 2px solid rgba(238,238,238,1);
@@ -665,8 +668,6 @@ fieldset {
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: space-between;
-  width: 1160px;
-  padding: 0;
 }
 
 .content-columns {
@@ -716,9 +717,53 @@ fieldset {
   margin-bottom: 14px;
 }
 
+.range-controls {
+  position: relative;
+  height: 80px;
+  padding-top: 39px;
+  padding-right: 20px;
+  padding-left: 20px;
+  background-color: #f1f1f1;
+  border-radius: 5px;
+}
+
+.range-controls .scale {
+  height: 2px;
+  background: #d7dcde;
+}
+
+.range-controls .bar {
+  width: 70%;
+  height: 2px;
+  background: #00ca74;
+}
+
+.range-controls .toggle {
+  position: absolute;
+  top: 28px;
+  left: 0;
+  width: 4px;
+  height: 4px;
+  padding: 0;
+  border: 10px solid #ffffff;
+  background-color: #ababab;
+  box-shadow: 0 2px 1px 0 #cfcfcf;
+  border-radius: 50%;
+  cursor: pointer;
+  box-sizing: content-box;
+}
+
+.range-controls .toggle-min {
+  left: 16px;
+}
+
+.range-controls .toggle-max {
+  left: 158px;
+}
+
 .price-legend {
   padding-top: 3px;
-  margin-bottom: 29px;
+  margin-bottom: 30px;
 }
 
 .options {
@@ -739,7 +784,7 @@ fieldset {
   font-family: "Roboto", Arial;
   border: none;
   background-color: rgba(238,238,238,1);
-  width: 78px;
+  width: 79px;
   height: 38px;
   outline: none;
   text-align: center;
@@ -785,7 +830,7 @@ fieldset {
 }
 
 .options-legend-net {
-  margin-bottom: 22px;
+  margin-bottom: 21px;
 }
 
 .options-legend-features {
@@ -1002,9 +1047,10 @@ fieldset {
   justify-content: flex-start;
   align-items: center;
   width: 100%;
-  min-height: 231px;
+  height: 231px;
   background-color: rgba(238,238,238,1);
   bottom: 0;
+  padding: 0 20px;
 }
 
 .catalog-item-label {
@@ -1018,10 +1064,12 @@ fieldset {
 
 .catalog-item-text {
   margin: 0;
+  height: 45px;
   font-size: 16px;
   line-height: 18px;
   text-align: center;
-  margin-bottom: 30px;
+  margin-bottom: 21px;
+  overflow: hidden;
 }
 
 .catalog-price-btn {
@@ -1122,7 +1170,7 @@ fieldset {
 /*  КАРТА */
 
 .map {
-  margin-bottom: 70px;
+  margin-bottom: 72px;
   position: relative;
   overflow: hidden;
   height: 415px;
@@ -1235,7 +1283,6 @@ fieldset {
   display: flex;
   justify-content: center;
   align-items: center;
-  position: relative;
   width: 78px;
   height: 78px;
   border-radius: 50%;
@@ -1260,7 +1307,6 @@ fieldset {
 
 .social-button-icon {
   display: block;
-  position: absolute;
 }
 
 .footer-title {
@@ -1286,10 +1332,14 @@ fieldset {
   justify-content: space-between;
   position: relative;
   width: 960px;
-  padding: 69px 100px 85px 100px;
+  padding: 22px 100px 83px 98px;
   box-shadow: 0px 20px 50px 15px rgba(0,0,0,0.5);
   background-color: rgba(255,255,255,1);
   display: none;
+}
+
+.write-us-form-show {
+  display: block;
 }
 
 .form-block {
@@ -1319,7 +1369,7 @@ fieldset {
 
 .write-us-input {
   width: 360px;
-  padding: 13px 13px;
+  padding: 14px 15px;
 }
 
 .write-us-textarea {
@@ -1336,11 +1386,12 @@ fieldset {
   line-height: 45px;
   font-weight: 500;
   color: rgb(0,0,0);
+  margin-top: 42px;
   margin-bottom: 41px;
 }
 
 .write-us-btn {
-  padding: 15px 84px;
+  padding: 15px 85px;
   border: 0;
   font-family: "Roboto", Arial;
   text-transform: uppercase;
@@ -1394,6 +1445,7 @@ fieldset {
   top: 76px;
   right: 87px;
   outline: none;
+  cursor: pointer;
 }
 
 .write-us-exit:hover {

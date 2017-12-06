@@ -16,12 +16,12 @@
         <img src="img/nerds-logo.svg" width="160" height="65" alt="Логотип веб-студии nerds">
       </a>
       <ul class="header-navigation-items">
-        <li class="header-navigation-item"><a class="header-navigation-link" href="">студия</a></li>
-        <li class="header-navigation-item"><a class="header-navigation-link" href="">клиенты</a></li>
+        <li class="header-navigation-item"><a class="header-navigation-link" href="#">студия</a></li>
+        <li class="header-navigation-item"><a class="header-navigation-link" href="#">клиенты</a></li>
         <li class="header-navigation-item"><a class="header-navigation-link navigation-link-active" href="">магазин</a></li>
-        <li class="header-navigation-item"><a class="header-navigation-link" href="">контакты</a></li>
+        <li class="header-navigation-item"><a class="header-navigation-link" href="#">контакты</a></li>
       </ul>
-      <a class="cart" href="">корзина</a>
+      <a class="cart" href="#">корзина</a>
     </nav>
   </header>
 
@@ -31,16 +31,24 @@
     <section class="content container">
       <div class="content-columns">
         <section class="options">
-          <form class="sorting-form" action="" method="post">
+          <form class="sorting-form" action="https://echo.htmlacademy.ru" method="get">
             <fieldset class="price">
               <legend class="price-legend">стоимость:</legend><br>
-              <input class="price-range" type="range" min="0" max="15000" step="500">
+              <div class="price-range">
+                <div class="range-controls">
+                  <div class="scale">
+                    <div class="bar"></div>
+                  </div>
+                  <div class="toggle toggle-min"></div>
+                  <div class="toggle toggle-max"></div>
+                </div>
+              </div>
               <div class="min-max">
                 <label>От
                 <input class="input-from-to" type="text" value="0">
               </label>
                 <label>До
-                <input class="input-from-to" type="text" value="15000">
+                <input class="input-from-to" type="text" value="15 000">
               </label>
               </div>
             </fieldset>
@@ -107,7 +115,7 @@
               <li class="catalog-item">
                 <img src="img/img-sedona-min.jpg" width="360" height="576" alt="сайт седона">
                 <div class="catalog-item-details">
-                  <p class="catalog-item-label">Sedona</p>
+                  <a class="catalog-item-label" href="#">Sedona</a>
                   <p class="catalog-item-text">Информационный сайт<br>для туристов</p>
                   <button class="catalog-price-btn">9 900 руб.</button>
                 </div>
@@ -115,7 +123,7 @@
               <li class="catalog-item">
                 <img src="img/img-pink-min.jpg" width="360" height="576" alt="сайт pink">
                 <div class="catalog-item-details">
-                  <p class="catalog-item-label">Pink app</p>
+                  <a class="catalog-item-label" href="#">Pink app</a>
                   <p class="catalog-item-text">Продуктовый лендинг<br>приложения для iOS и Android</p>
                   <button class="catalog-price-btn">9 900 руб.</button>
                 </div>
@@ -123,7 +131,7 @@
               <li class="catalog-item">
                 <img src="img/img-barbershop-min.jpg" width="360" height="576" alt="сайт barbershop">
                 <div class="catalog-item-details">
-                  <p class="catalog-item-label">Barbershop</p>
+                  <a class="catalog-item-label" href="#">Barbershop</a>
                   <p class="catalog-item-text">Сайт салона красоты.<br>Для мужчин, да.</p>
                   <button class="catalog-price-btn">9 900 руб.</button>
                 </div>
@@ -131,7 +139,7 @@
               <li class="catalog-item">
                 <img src="img/img-mishka-min.jpg" width="360" height="576" alt="сайт mishka">
                 <div class="catalog-item-details">
-                  <p class="catalog-item-label">Mishka</p>
+                  <a class="catalog-item-label" href="#">Mishka</a>
                   <p class="catalog-item-text">Интернет-магазин<br>вязаных игрушек</p>
                   <button class="catalog-price-btn">9 900 руб.</button>
                 </div>
@@ -139,7 +147,7 @@
               <li class="catalog-item">
                 <img src="img/img-aplus-min.jpg" width="360" height="576" alt="сайт a plus">
                 <div class="catalog-item-details">
-                  <p class="catalog-item-label">A plus</p>
+                  <a class="catalog-item-label" href="#">A plus</a>
                   <p class="catalog-item-text">Лендинг курсов повышения<br>квалификации</p>
                   <button class="catalog-price-btn">9 900 руб.</button>
                 </div>
@@ -147,7 +155,7 @@
               <li class="catalog-item">
                 <img src="img/img-kvast-min.jpg" width="360" height="576" alt="сайт кваст">
                 <div class="catalog-item-details">
-                  <p class="catalog-item-label">Кваст</p>
+                  <a class="catalog-item-label" href="#">Кваст</a>
                   <p class="catalog-item-text">Промо-сайт производителя<br>крафтового кваса</p>
                   <button class="catalog-price-btn">9 900 руб.</button>
                 </div>
@@ -159,16 +167,16 @@
             <nav class="navigation-list">
               <ul class="navigation-items">
                 <li class="navigation-item">
-                  <a class="navigation-item-link item-link-active" href="">1</a>
+                  <a class="navigation-item-link item-link-active" href="#">1</a>
                 </li>
                 <li class="navigation-item">
-                  <a class="navigation-item-link" href="">2</a>
+                  <a class="navigation-item-link" href="#">2</a>
                 </li>
                 <li class="navigation-item">
-                  <a class="navigation-item-link" href="">3</a>
+                  <a class="navigation-item-link" href="#">3</a>
                 </li>
                 <li class="navigation-item">
-                  <a class="navigation-item-link next-btn" href="">Следующая</a>
+                  <a class="navigation-item-link next-btn" href="#">Следующая</a>
                 </li>
               </ul>
             </nav>
@@ -183,7 +191,7 @@
         <p class="contacts-title">nёrds design studio</p>
         <p class="contacts-info">191186, Санкт-Петербург,<br>ул. Б. Конюшенная, д. 19/8</p>
         <p class="contacts-info">тел. +7 (812) 275-75-75</p>
-        <a class="letter" href="">напишите нам</a>
+        <button class="letter">напишите нам</button>
       </section>
     </section>
 
@@ -191,20 +199,20 @@
       <div class="social">
         <ul class="social-list">
           <li>
-            <a class="social-button social-button-vk" href="">
-              <img class="social-button-icon" src="../img/vk-icon.svg" alt="Вконтакте">
+            <a class="social-button social-button-vk" href="#">
+              <img class="social-button-icon" src="img/vk-icon.svg" alt="Вконтакте">
               Вконтакте
             </a>
           </li>
           <li>
-            <a class="social-button social-button-fb" href="">
-              <img class="social-button-icon" src="../img/fb-icon.svg" alt="Facebook">
+            <a class="social-button social-button-fb" href="#">
+              <img class="social-button-icon" src="img/fb-icon.svg" alt="Facebook">
               Фейсбук
             </a>
           </li>
           <li>
-            <a class="social-button social-button-inst" href="">
-              <img class="social-button-icon" src="../img/insta-icon.svg" alt="Instagram">
+            <a class="social-button social-button-inst" href="#">
+              <img class="social-button-icon" src="img/insta-icon.svg" alt="Instagram">
               Инстаграм
             </a>
           </li>
@@ -217,15 +225,15 @@
     </footer>
     <section class="write-us-section">
       <form class="write-us-form">
-        <legend class="write-us-legend">Напишите нам</legend>
+        <h2 class="write-us-legend">Напишите нам</h2>
         <div class="form-block">
           <div class="form-item">
             <label for="name" class="write-us-label">Ваше имя:</label>
-            <input class="write-us-input" type="name" id="name" placeholder="Представьтесь, пожалуйста">
+            <input class="write-us-input" type="text" id="name" name="login" placeholder="Представьтесь, пожалуйста">
           </div>
           <div class="form-item">
             <label for="email" class="write-us-label">Ваш e-mail:</label>
-            <input class="write-us-input" type="email" id="email" placeholder="Для отправки ответа">
+            <input class="write-us-input" type="email" id="email" name="email" placeholder="Для отправки ответа">
           </div>
         </div>
         <label for="write-text" class="write-us-label write-us-message">Текст письма:</label>
@@ -235,6 +243,7 @@
       </form>
     </section>
   </main>
+  <script src="/js/script.js"></script>
 </body>
 
 </html>
