@@ -192,15 +192,6 @@ fieldset {
   transition: transform 1s ease;
 }
 
-.slider-item {
-  height: 421px;
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  width: 1160px;
-  padding: 0 20px;
-}
-
 .slider-controls {
   font-size: 0;
   position: absolute;
@@ -250,11 +241,11 @@ fieldset {
 }
 
 #btn-2:checked ~ .slider-slides {
-    transform: translate(-1160px);
+    transform: translate(-1200px);
 }
 
 #btn-3:checked ~ .slider-slides {
-    transform: translate(-2320px);
+    transform: translate(-2400px);
 }
 
 .slider-header {
@@ -301,12 +292,18 @@ fieldset {
   flex-direction: column;
   justify-content: flex-start;
   align-items: flex-start;
+  height: 421px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  width: 1200px;
+  padding: 0 20px;
 }
 
 .slider-item-1 {
   background-image: url(../img/slide1-min.png);
   background-repeat: no-repeat;
-  background-position: 93% 10px;
+  background-position: 90% 8px;
 }
 
 .slider-item-2 {
@@ -781,7 +778,7 @@ fieldset {
 }
 
 .input-from-to {
-  font-family: "Roboto", Arial;
+  font-family: "Roboto", Arial, sans-serif;
   border: none;
   background-color: rgba(238,238,238,1);
   width: 79px;
@@ -1181,6 +1178,7 @@ fieldset {
   left: 0;
   top: 0;
   width: 100%;
+  z-index: -1;
 }
 
 .contacts {
@@ -1221,7 +1219,7 @@ fieldset {
 .letter {
   align-self: center;
   text-transform: uppercase;
-  font-family: "Roboto", Arial;
+  font-family: "Roboto", Arial, sans-serif;
   font-weight: 500;
   font-size: 16px;
   line-height: 18px;
@@ -1360,7 +1358,7 @@ fieldset {
 }
 
 .write-us-label placeholder {
-  font-family: "Roboto", Arial;
+  font-family: "Roboto", Arial, sans-serif;
 }
 
 .write-us-message {
@@ -1393,7 +1391,7 @@ fieldset {
 .write-us-btn {
   padding: 15px 85px;
   border: 0;
-  font-family: "Roboto", Arial;
+  font-family: "Roboto", Arial, sans-serif;
   text-transform: uppercase;
   font-weight: 500;
   font-size: 16px;
