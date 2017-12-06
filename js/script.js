@@ -3,7 +3,6 @@
   var popup = document.querySelector(".write-us-form");
   var close = popup.querySelector(".write-us-exit");
 
-  // var form = popup.querySelector(".write-us-form");
   var login = popup.querySelector("[name=login]");
   var email = popup.querySelector("[name=email]");
 
