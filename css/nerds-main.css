@@ -243,7 +243,7 @@ fieldset {
   width: 18px;
   height: 18px;
   border-radius: 50%;
-  margin: 0 3px;
+  margin: 0 2px;
   cursor: pointer;
   -webkit-transform: translateX(7px) translateY(-73px);
   -ms-transform: translateX(7px) translateY(-73px);
@@ -433,7 +433,7 @@ fieldset {
   font-size: 16px;
   line-height: 24px;
   margin: 0;
-  margin-bottom: 30px;
+  margin-bottom: 31px;
   width: 270px;
 }
 
@@ -573,7 +573,7 @@ fieldset {
 .about-us-text {
   font-weight: normal;
   padding-right: 30px;
-  margin-bottom: 23px;
+  margin-bottom: 22px;
 }
 
 .about-us-orders {
@@ -822,7 +822,7 @@ fieldset {
   font-weight: bold;
   text-transform: uppercase;
   font-size: 18px;
-  line-height: 18px;
+  line-height: 30px;
   color: rgb(0,0,0);
 }
 
@@ -859,6 +859,7 @@ fieldset {
   -ms-flex-pack: start;
   justify-content: flex-start;
   min-height: 200px;
+  margin-bottom: 31px;
 }
 
 .price-range {
@@ -914,8 +915,8 @@ fieldset {
 }
 
 .price-legend {
-  padding-top: 3px;
-  margin-bottom: 55px;
+  letter-spacing: 0.5px;
+  margin-bottom: 45px;
 }
 
 .options {
@@ -946,8 +947,14 @@ fieldset {
   text-transform: uppercase;
 }
 
+.min-max label {
+  line-height: 22px;
+}
+
 .input-from-to {
   font-family: "Roboto", Arial, sans-serif;
+  font-size: 16px;
+  line-height: 22px;
   border: none;
   background-color: rgba(238,238,238,1);
   width: 79px;
@@ -955,7 +962,7 @@ fieldset {
   outline: none;
   text-align: center;
   margin-left: 9px;
-  margin-bottom: 60px;
+  margin-bottom: 55px;
   border-radius: 3px;
 }
 
@@ -994,6 +1001,11 @@ fieldset {
   background-size: 100% 100%;
 }
 
+.grid-box-radio:disabled + label,
+.features-box-checkbox:disabled + label {
+  opacity: 0.1;
+}
+
 .grid-box-label:hover {
   color: rgb(0,0,0);
 }
@@ -1006,17 +1018,22 @@ fieldset {
   opacity: 0.3;
 }
 
-.grid-box-field,
-.features-box-field {
-  margin-bottom: 32px;
+.grid-box-field {
+  margin-bottom: 28px;
 }
 
 .options-legend-net {
-  margin-bottom: 20px;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 30px;
+  margin-bottom: 14px;
 }
 
 .options-legend-features {
-  margin-bottom: 21px;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 30px;
+  margin-bottom: 14px;
 }
 
 .features-box-checkbox {
@@ -1148,6 +1165,10 @@ fieldset {
   padding: 0;
 }
 
+.sorting-list-item:last-of-type a {
+  margin-right: 20px;
+}
+
 .sort-btn {
   background: none;
   outline: 0;
@@ -1277,16 +1298,20 @@ fieldset {
 .catalog-item-label {
   font-size: 18px;
   line-height: 30px;
+  font-weight: 700;
   color: rgba(0,0,0,1);
   margin: 0;
   margin-top: 26px;
   margin-bottom: 16px;
+  max-height: 30px;
+  overflow: hidden;
 }
 
 .catalog-item-text {
   margin: 0;
   height: 45px;
   font-family: "Roboto", Arial, sans-serif;
+  color: rgba(102,102,102,1);
   font-weight: normal;
   font-size: 16px;
   line-height: 18px;
@@ -1422,10 +1447,15 @@ fieldset {
   z-index: -1;
 }
 
-.contacts {
+.map-wrapper {
   position: absolute;
-  top: 13%;
-  left: 13.4%;
+  top: 0;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.contacts {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1442,6 +1472,7 @@ fieldset {
   width: 319px;
   padding: 51px 50px 47px 50px;
   background-color: rgba(255,255,255,1);
+  margin-top: 53px;
 }
 
 .contacts-title {
@@ -1460,7 +1491,7 @@ fieldset {
   line-height: 18px;
   width: 210px;
   margin: 0;
-  margin-bottom: 17px;
+  margin-bottom: 18px;
   color: rgb(102,102,102);
 }
 
@@ -1476,7 +1507,7 @@ fieldset {
   font-weight: 500;
   font-size: 16px;
   line-height: 18px;
-  padding: 15px 43px;
+  padding: 15px 44px;
   color: rgb(255,255,255);
   background-color: rgb(251,86,90);
   border: none;
